@@ -7,12 +7,13 @@ Created on Fri Jan 25 17:31:46 2019
 
 # Permet decalculer les éléments d'une conjecture de Syracuse
 
-n = int(input('Entrez nu nombre'))
+n = int(input('Entrez un nombre'))
 
 
 def syracuse(n):
-    syrac = list["",n]
-    while (n>1):
+    syrac = list()
+    syrac.append(n)
+    while (n!=1):
         if (n%2 == 0):
             n = n/2
         else:
