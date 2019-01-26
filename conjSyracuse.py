@@ -19,8 +19,9 @@ def syracuse(n):
             n = (n*3)+1
         syrac.append(n)
     
-    dico = ['liste']=syrac
-    dico = ['longueur syrac'] = len(syrac)
+    dico={}
+    dico['liste']=syrac
+    dico['longueur syrac'] = len(syrac)
     return dico
 
 syracuse(n)
