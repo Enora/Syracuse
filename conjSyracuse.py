@@ -7,8 +7,10 @@ Created on Fri Jan 25 17:31:46 2019
 
 # Permet decalculer les éléments d'une conjecture de Syracuse
 
-n = int(input('Entrez un nombre'))
-
+import time
+begin_time = time.time()
+#n = int(input('Entrez un nombre'))
+i = 1
 
 def syracuse(n):
     syrac = list()
@@ -25,4 +27,10 @@ def syracuse(n):
     dico['longueur syrac'] = len(syrac)
     return dico
 
-syracuse(n)
+while(time.time() - begin_time <=0.01):
+    #print si beaucoup d'éléments (x>300 ?) 
+    # idée de "met longtemps à conver vers 4-2-1"
+    print(syracuse(i))
+    i = i+1
+
+print(i)
