@@ -9,7 +9,6 @@ Created on Fri Jan 25 17:31:46 2019
 
 import time
 begin_time = time.time()
-#n = int(input('Entrez un nombre'))
 i = 1
 
 def syracuse(n):
@@ -33,8 +32,3 @@ while(time.time() - begin_time <= 600):
 
 print(i)
 
-#1525454 : 257 étape avant d'arriver à 1.
-#1525414 : 288
-
-    #print si beaucoup d'éléments (x>300 ?) 
-    # idée de "met longtemps à conver vers 4-2-1"
