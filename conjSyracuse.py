@@ -28,9 +28,13 @@ def syracuse(n):
     return dico
 
 while(time.time() - begin_time <= 600):
-    #print si beaucoup d'éléments (x>300 ?) 
-    # idée de "met longtemps à conver vers 4-2-1"
     print(syracuse(i))
     i = i+1
 
 print(i)
+
+#1525454 : 257 étape avant d'arriver à 1.
+#1525414 : 288
+
+    #print si beaucoup d'éléments (x>300 ?) 
+    # idée de "met longtemps à conver vers 4-2-1"
