@@ -27,7 +27,7 @@ def syracuse(n):
     dico['longueur syrac'] = len(syrac)
     return dico
 
-while(time.time() - begin_time <=0.01):
+while(time.time() - begin_time <= 600):
     #print si beaucoup d'éléments (x>300 ?) 
     # idée de "met longtemps à conver vers 4-2-1"
     print(syracuse(i))
