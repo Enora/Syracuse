@@ -10,22 +10,24 @@ Created on Mon Feb  4 03:34:11 2019
 import time
 begin_time = time.time()
 i = 1
+syrac = list()
+syrac.append("")
+syrac.append(0)
 
 def syracuse(n):
-    syrac = list()
-    syrac.append("")
-    syrac.append(0)
+    print(syrac)
     cpt = 0 #compteur pour le nombre d'étape avant d'arriver à 1
     
     while (n!=1):
-        if (n < len(syrac)): #Si le n courant est déjà calculé
-            syrac.append(cpt + syrac[n])
-        if (n%2 == 0):
-            n = n/2
-        else:
-            n = (n*3)+1
         cpt = cpt + 1
-    syrac.append(cpt)
+        if (n < len(syrac)): #Si le n courant est déjà calculé
+            syrac.append(cpt - 1 + syrac[n])
+        else:
+            if (n%2 == 0):
+                n = n/2
+            else:
+                n = (n*3)+1
+        syrac.append(cpt)
     
     return syrac
 
