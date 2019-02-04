@@ -14,6 +14,7 @@ i = 1
 def syracuse(n):
     syrac = list()
     syrac.append("")
+    syrac.append(0)
     cpt = 0 #compteur pour le nombre d'étape avant d'arriver à 1
     
     while (n!=1):
@@ -24,9 +25,11 @@ def syracuse(n):
         else:
             n = (n*3)+1
         cpt = cpt + 1
-        syrac.append(cpt)
+    syrac.append(cpt)
     
     return syrac
+
+
 
 while(time.time() - begin_time <= 0.001):
     print(syracuse(i))
