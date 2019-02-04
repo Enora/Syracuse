@@ -18,9 +18,8 @@ def syracuse(n):
     cpt = 0 #compteur pour le nombre d'étape avant d'arriver à 1
     
     while (n!=1):
-
         if (n < len(syrac)): #Si le n courant est déjà calculé
-            syrac.append(cpt - 1 + syrac[n])
+            syrac.append(cpt + syrac[n])
         else:
             if (n%2 == 0):
                 n = n/2
